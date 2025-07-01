@@ -20,9 +20,23 @@ body {
   line-height: 18px;
   font-family: verdana, arial, helvetica, sans-serif;
 }
+ 
+.flash-message.notice {
+  color: green;
+}
+ 
+.flash-message.alert {
+  background-color: #ffd4d1;
+  color: #930403;
+  border: solid 1px #930403;
+}
 
 p {
   margin: 33px;
+}
+
+td {
+  padding: 4px 5px;
 }
 
 #error-box {
