@@ -1,7 +1,7 @@
 <h1>Editing Book</h1>
 
 <% if @book.errors.any? %>
-  <div id="error-box">
+  <div class="error-box">
     <h2><%= @book.errors.count %> errors prohibited this book from being:</h2>
     <ul>
      <% @book.errors.full_messages.each do |message| %>
@@ -11,13 +11,13 @@
   </div>
 <% end %>
 
-<%= form_with model: @book, url: book_path(@book.id), method: :patch, class: "book-form" do |f| %>
+<%= form_with model: @book, url: book_path(@book.id), method: :patch do |f| %>
   <div class="book-form-item">
     <%= f.label :title, "Title" %>
     <%= f.text_field :title %>
   </div>
 
-  <div class="book-form-item <%= $key %>">
+  <div class="book-form-item">
     <%= f.label :body, "Body" %>
     <%= f.text_area :body %>
   </div>

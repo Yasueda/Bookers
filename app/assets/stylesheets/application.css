@@ -21,16 +21,6 @@ body {
   font-family: verdana, arial, helvetica, sans-serif;
 }
  
-.flash-message.notice {
-  color: green;
-}
- 
-.flash-message.alert {
-  background-color: #ffd4d1;
-  color: #930403;
-  border: solid 1px #930403;
-}
-
 p {
   margin: 33px;
 }
@@ -39,14 +29,18 @@ td {
   padding: 4px 5px;
 }
 
-#error-box {
+.flash-message.notice {
+  color: green;
+}
+
+.error-box {
   background-color: #F0F0F0;
   width: 450px;
   border: solid 2px red;
   margin-bottom: 20px;
 }
 
-#error-box h2 {
+.error-box h2 {
   color:white;
   background-color: #CC0000;
   padding: 5px 15px;
@@ -54,20 +48,16 @@ td {
   font-size: 12px;
 }
 
-#error-box ul {
+.error-box ul {
   margin: 33px;
-}
-
-.book-form label {
-  display: block;
-}
-
-.book-submit {
-  display: block;
 }
 
 .book-form-item {
   margin-bottom: 10px;
+}
+
+.book-form-item label {
+  display: block;
 }
 
 .field_with_errors {
@@ -77,5 +67,6 @@ td {
 }
 
 .book-submit {
+  display: block;
   margin-bottom: 10px;
 }
